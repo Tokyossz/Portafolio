@@ -107,34 +107,32 @@ function abrirModal(proyectoId) {
     
     const proyectos = {
         'sistema-inventario': {
-            titulo: 'Gestión de Pagos - Terrenos',
+            titulo: 'Control de Pagos - Terrenos',
             imagenes: ['1.jpg', '4.jpg', '5.jpg'],
             descripcion: `
-                <h2 style="color: var(--primary); margin-bottom: 20px;">Gestión de Pagos de Terrenos</h2>
+                <h2 style="color: var(--primary); margin-bottom: 20px;">Control de Pagos de Terrenos</h2>
                 <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 20px;">
-                    Este sistema nació de una necesidad real para llevar el control de abonos y saldos de un terreno. Es una aplicación web completa donde aprendí a integrar el backend con Django y a crear una interfaz dinámica con JavaScript y CSS.
+                    Este sistema nació para ayudar a llevar el orden de los abonos y saldos de un terreno de forma sencilla. Fue mi primer gran proyecto donde aprendí a conectar ideas con código real usando Django y a crear una página que fuera fácil de usar.
                 </p>
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
                     <span class="tag">Python</span>
                     <span class="tag">Django</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Orden y Control</span>
                 </div>
             `
         },
         'analizador-memoria': {
-            titulo: 'Analizador Forense de Memoria (RAM)',
-            imagenes: ['3.jpg', '8.jpg', '9.jpg'],
+            titulo: 'Explorador de Memoria (RAM)',
+            imagenes: ['LectorRam/1.png', 'LectorRam/2.jpg', 'LectorRam/3.jpg'],
             descripcion: `
-                <h2 style="color: var(--primary); margin-bottom: 20px;">Forensic Memory Analyzer PRO</h2>
+                <h2 style="color: var(--primary); margin-bottom: 20px;">Explorador de Memoria RAM</h2>
                 <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 20px;">
-                    Desarrollé una herramienta avanzada en C++ para el análisis forense de la memoria RAM. Utiliza escaneo multihilo para identificar cadenas de texto (ASCII y UTF-16) en tiempo real, permitiendo descubrir credenciales, IPs y artefactos volátiles dentro de procesos activos mediante la Windows API.
+                    Me dio curiosidad saber qué guarda una computadora mientras está encendida, así que creé esta herramienta en C++. Sirve para "asomarse" a la memoria RAM y encontrar datos importantes como textos o direcciones, ayudando a entender mejor cómo viaja la información.
                 </p>
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
                     <span class="tag">C++</span>
-                    <span class="tag">Windows API</span>
-                    <span class="tag">Multi-threading</span>
-                    <span class="tag">Cyber Security</span>
+                    <span class="tag">Curiosidad Técnica</span>
+                    <span class="tag">Seguridad</span>
                 </div>
             `
         }
@@ -240,11 +238,11 @@ const scrollObserver = new MutationObserver(() => {
 scrollObserver.observe(terminalHistory, { childList: true, subtree: true });
 
 const commands = {
-    help: 'Comandos disponibles: help, about, skills, projects, contact, clear',
-    about: 'Ingeniero en Sistemas Computacionales, especializado en infraestructura IT y automatización.',
-    skills: 'Python, Django, Infraestructura IT, Ciberseguridad, Redes, Windows/Linux',
-    projects: 'Mira mis proyectos en la sección "Sistemas" de esta página.',
-    contact: 'Escríbeme a cv_aim@hotmail.com',
+    help: 'Puedes probar con: help, quien_soy, habilidades, proyectos, contacto, clear',
+    quien_soy: 'Soy Andrés, un apasionado por la tecnología que busca resolver problemas de forma creativa.',
+    habilidades: 'Me muevo bien con Python, Django, Redes y cuidando que los sistemas sean seguros.',
+    proyectos: 'Echa un vistazo a la sección "Cosas que he creado" un poco más abajo.',
+    contacto: 'Escríbeme con confianza a cv_aim@hotmail.com',
     clear: 'CLEAR'
 };
 
@@ -354,7 +352,8 @@ if (terminalCard) {
 window.addEventListener('load', () => {
     const welcome = `
         <div class="welcome-header">═══════════════════════════════════════</div>
-        <div class="t-output-line">Bienvenido a mi shell interactiva, ${'<span class="welcome-hint">escribe "help" para comenzar</span>'}</div>
+        <div class="t-output-line">¡Hola! Bienvenido a mi rincón digital.</div>
+        <div class="t-output-line">Escribe ${'<span class="welcome-hint">"help"</span>'} para ver qué puedes hacer aquí.</div>
         <div class="welcome-header">═══════════════════════════════════════</div>
     `;
     terminalHistory.innerHTML = welcome;

@@ -123,7 +123,7 @@ function abrirModal(proyectoId) {
         },
         'analizador-memoria': {
             titulo: 'Explorador de Memoria (RAM)',
-            imagenes: ['LectorRam/1.png', 'LectorRam/2.jpg', 'LectorRam/3.jpg'],
+            imagenes: ['LectorRAM/1.png', 'LectorRAM/2.jpg', 'LectorRAM/3.jpg'],
             descripcion: `
                 <h2 style="color: var(--primary); margin-bottom: 20px;">Explorador de Memoria RAM</h2>
                 <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 20px;">
